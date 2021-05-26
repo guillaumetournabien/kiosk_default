@@ -2715,9 +2715,9 @@
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "2",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": "1",
         "topic": "",
         "payload": "PRODUCT_INFO.PRODUCT",
@@ -2751,7 +2751,7 @@
         "type": "function",
         "z": "4a92841c.8244cc",
         "name": "Initialisation Variable",
-        "func": "// Declaration of the generic structure\n//\nvar SW_VERSION = {\n        \"NAME\":\"SW_VERSION\",\n        \"VERSION\":\"1.0.0\"\n};\nvar SERIAL_NUMBER = {\n    \"NAME\":\"SERIAL_NUMBER\",\n    \"SERIAL_NUMBER\":\"1\"\n};\n\nvar PRODUCT_INFO_TEMPLATE={\n    \"NAME\":\"PRODUCT_INFO\",\n    \"PRODUCT\":\"Factory\",\n    \"SERIAL_NUMBER\":0,\n    \"ALIVE_COUNTER\":0,\n    \"STATE_MODE\":0,\n    \"SW_VERS_DAY\":0,\n    \"SW_VERS_MONTH\":0,\n    \"SW_VERS_YEAR\":0,\n    \"SW_VERS_MAJOR\":0,\n    \"SW_VERS_MINOR\":0,\n    \"SW_VERS_PATCH\":0\n}\n\nglobal.set('SW_VERSION', SW_VERSION);\nglobal.set('SERIAL_NUMBER', SERIAL_NUMBER);\nglobal.set('PRODUCT_INFO', PRODUCT_INFO_TEMPLATE);\n\nreturn msg;",
+        "func": "// Declaration of the generic structure\n//\nvar SW_VERSION = {\n        \"NAME\":\"SW_VERSION\",\n        \"VERSION\":\"1.0.1\"\n};\nvar SERIAL_NUMBER = {\n    \"NAME\":\"SERIAL_NUMBER\",\n    \"SERIAL_NUMBER\":\"1\"\n};\n\nvar PRODUCT_INFO_TEMPLATE={\n    \"NAME\":\"PRODUCT_INFO\",\n    \"PRODUCT\":\"Factory\",\n    \"SERIAL_NUMBER\":0,\n    \"ALIVE_COUNTER\":0,\n    \"STATE_MODE\":0,\n    \"SW_VERS_DAY\":0,\n    \"SW_VERS_MONTH\":0,\n    \"SW_VERS_YEAR\":0,\n    \"SW_VERS_MAJOR\":0,\n    \"SW_VERS_MINOR\":0,\n    \"SW_VERS_PATCH\":0\n}\n\nglobal.set('SW_VERSION', SW_VERSION);\nglobal.set('SERIAL_NUMBER', SERIAL_NUMBER);\nglobal.set('PRODUCT_INFO', PRODUCT_INFO_TEMPLATE);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
